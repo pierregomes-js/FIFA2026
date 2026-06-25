@@ -1,0 +1,13 @@
+5001;1;2;2;1;grupos
+5002;3;4;3;0;grupos
+5003;1;4;0;0;grupos
+5004;6;1;2;2;segunda rodada
+5005;5;6;0;1;oitavas
+5006;7;8;2;3;grupos
+5007;8;7;1;1;grupos
+5008;4;3;5;1;grupos
+5009;9;10;1;1;final
+5010;10;9;2;3;final
+5011;11;7;3;0;quartas
+5012;8;11;4;2;quartas
+5013;5;6;1;1;quartas

@@ -1,0 +1,14 @@
+101;Vinicius Junior;1;Atacante;25;3
+102;Alisson;1;Goleiro;33;0
+103;Lionel Messi;2;Atacante;38;4
+104;Kylian Mbappe;3;Atacante;27;5
+105;Wataru Endo;4;Meio;32;7
+106;Emerson;4;Atacante;25;3
+107;Pedro;5;Goleiro;77;2
+108;Rafael;2;Zagueiro;18;5
+109;Rodrigo;8;Zagueiro;44;13
+110;Neymar;1;Goleiro;45;1
+111;Joao;11;Atacante;23;4
+112;Jose;9;Meio;33;44
+113;Joselino;8;Goleiro;35;5
+114;Wagner;10;Zagueiro;34;6

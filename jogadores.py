@@ -92,7 +92,7 @@ def artilheiros_estatisticas(lista, selecoes):
         print(f'\n ===  Seleção {selecao['nome']} === \n')
         jogadores_selecao = filtrar(lista, lambda x:x if x['selecao_id'] == selecao['id'] else None)
 
-        # print(f'Nome da seleção: {selecao['nome']}')
+    
         print(f'Total de jogadores: {len(jogadores_selecao)}')
         print(f'Total de gols do elenco: {total_gols(jogadores_selecao)}')
         print(f'Média de idade: {media_idade(jogadores_selecao)}')

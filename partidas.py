@@ -75,39 +75,24 @@ def partidas_selecoes(selecoes):
     return lista
 
 
-def distrbuicao_vitorias_gols(partida, casa, fora):
+def distribuicao_gols(partida, item, s1, s2):
     
-    if partida['gols_casa'] == partida['gols_fora']:
+    if partida[s1] == partida[s2]:
 
-        casa['gols_pro'] += partida['gols_casa']
-        fora['gols_pro'] += partida['gols_fora']
+        item['gols_pro'] += partida[s1]
+        item['gols_contra'] += partida[s2]
+        item['empate'] += 1
 
-        casa['gols_contra'] += partida['gols_fora']
-        fora['gols_contra'] += partida['gols_casa']
-
-        casa['empate'] += 1
-        fora['empate'] += 1
-
-    elif partida['gols_casa'] > partida['gols_fora']:
+    elif partida[s1] > partida[s2]:
                 
-        casa['vitoria'] += 1
-        fora['derrota'] += 1
-
-        casa['gols_pro'] += partida['gols_casa']
-        fora['gols_pro'] += partida['gols_fora']
-
-        casa['gols_contra'] += partida['gols_fora']
-        fora['gols_contra'] += partida['gols_casa']
+        item['gols_pro'] += partida[s1]
+        item['gols_contra'] += partida[s2]
+        item['vitoria'] += 1
 
     else:
-        casa['gols_pro'] += partida['gols_casa']
-        fora['gols_pro'] += partida['gols_fora']
-
-        casa['gols_contra'] += partida['gols_fora']
-        fora['gols_contra'] += partida['gols_casa']
-
-        casa['vitoria'] += 1
-        fora['derrota'] += 1
+        item['gols_pro'] += partida[s1]
+        item['gols_contra'] += partida[s2]
+        item['derrota'] += 1
 
 
 #relacionamento + distribucao + lista de grupos + classificacao
@@ -120,8 +105,9 @@ def calcular_estatisticas(partidas, selecoes):
         selecao_casa = filtrar(lista, lambda x:x if x['id'] == partida['selecao_casa_id'] else None)[0]
         selecao_fora = filtrar(lista, lambda x:x if x['id'] == partida['selecao_fora_id'] else None)[0]
 
-        
-        distrbuicao_vitorias_gols(partida, selecao_casa, selecao_fora)
+
+        distribuicao_gols(partida, selecao_casa, 'gols_casa', 'gols_fora')
+        distribuicao_gols(partida, selecao_fora, 'gols_fora', 'gols_casa')
 
 
     for item in lista:

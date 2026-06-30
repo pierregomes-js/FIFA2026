@@ -90,8 +90,8 @@ def distribuicao_gols(partida, item, s1, s2):
         item['vitoria'] += 1
 
     else:
-        item['gols_pro'] += partida[s2]
-        item['gols_contra'] += partida[s1]
+        item['gols_pro'] += partida[s1]
+        item['gols_contra'] += partida[s2]
         item['derrota'] += 1
 
 

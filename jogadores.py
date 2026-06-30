@@ -8,11 +8,12 @@ def obter_jogador(selecoes, jogadores):
     selecao_id = obter_inteiro('Id da seleção desejada: ')
 
     nome_selecao = filtrar(selecoes, lambda x:x['nome'] if x['id'] == selecao_id else None)
-    
     while len(nome_selecao) == 0:
         print('Seleção não encontrada.')
         selecao_id = obter_inteiro('Id da seleção desejada: ')
-    
+
+        nome_selecao = filtrar(selecoes, lambda x:x['nome'] if x['id'] == selecao_id else None)
+     
     nome_selecao = nome_selecao[0]['nome']
 
     if len(jogadores) == 0:

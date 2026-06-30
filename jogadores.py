@@ -8,10 +8,12 @@ def obter_jogador(selecoes, jogadores):
     selecao_id = obter_inteiro('Id da seleção desejada: ')
 
     nome_selecao = filtrar(selecoes, lambda x:x['nome'] if x['id'] == selecao_id else None)
-    if len(nome_selecao) == 0:
+    
+    while len(nome_selecao) == 0:
         print('Seleção não encontrada.')
-    else: 
-        nome_selecao[0]['nome']
+        selecao_id = obter_inteiro('Id da seleção desejada: ')
+    
+    nome_selecao = nome_selecao[0]['nome']
 
     if len(jogadores) == 0:
         id_atual = 100
@@ -33,7 +35,7 @@ def obter_jogador(selecoes, jogadores):
     }
 
     jogadores.append(jogador)
-    print(f'[OK] Jogador {nome} cadastrado e vinculado a selecao {nome_selecao[0]['nome']}!')
+    print(f'[OK] Jogador {nome} cadastrado e vinculado a selecao {nome_selecao}!')
 
 
 def listar_jogadores(jogadores, selecoes):

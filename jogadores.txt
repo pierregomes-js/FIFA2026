@@ -13,3 +13,6 @@
 113;Joselino;8;Goleiro;35;5
 114;Wagner;10;Zagueiro;34;6
 115;Gomez;6;Atacante;22;12
+116;Bruno;12;Zagueiro;19;13
+117;Liev;7;Goleiro;78;11
+118;Pedro Ricardo;1;Meio;39;5

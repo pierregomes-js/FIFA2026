@@ -9,3 +9,4 @@
 9;Borussia;exemplo;D;23;1
 10;Suecia;Sueca;D;14;1
 11;Africa do Sul;Africana;B;12;2
+12;México;Mexicana;D;22;1

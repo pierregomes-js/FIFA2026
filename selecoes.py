@@ -33,7 +33,7 @@ def listar_selecoes(lista):
     print(f'Há {len(lista)} seleções: ')
 
     for dado in lista:
-        print(f'Id: {dado['id']} - Nome: {dado['nome']} - Confederação: {dado['id']} - Grupo: {dado['grupo']} - Ranking FIFA: {dado['ranking_fifa']} - Títulos: {dado['titulos']}')
+        print(f'Id: {dado['id']} - Nome: {dado['nome']} - Confederação: {dado['confederacao']} - Grupo: {dado['grupo']} - Ranking FIFA: {dado['ranking_fifa']} - Títulos: {dado['titulos']}')
 
 
 def buscar_selecoes(lista):

@@ -33,7 +33,7 @@ def obter_jogador(selecoes, jogadores):
     }
 
     jogadores.append(jogador)
-    print(f'[OK] Jogador {nome} cadastrado e vinculado a selecao {nome_selecao}!')
+    print(f'[OK] Jogador {nome} cadastrado e vinculado a selecao {nome_selecao[0]['nome']}!')
 
 
 def listar_jogadores(jogadores, selecoes):

@@ -12,3 +12,4 @@
 112;Jose;9;Meio;33;44
 113;Joselino;8;Goleiro;35;5
 114;Wagner;10;Zagueiro;34;6
+115;Gomez;6;Atacante;22;12
